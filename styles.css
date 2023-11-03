@@ -1,0 +1,121 @@
+@font-face {
+    font-family: dancing;
+    src: url(fonts/dancing/DancingScript-Regular.ttf);
+}
+p{
+    font-family: helvetica;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+header, footer{
+    margin-top: 2rem;
+    height: 5rem;
+    background-color: #d9bb72;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header ul li{
+    list-style: none;
+    width:7rem;
+}
+
+header ul li a,
+footer p{
+    color:white;
+    font-family: fantasy;
+    font-size: large;
+    text-decoration: none;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+    font-family: "Dancing Script";
+    text-align: center;
+    font-weight: 300;
+}
+
+.galerie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+
+    margin: 2rem 0;
+    /* width: 100%; */
+    border: 1px solid grey;
+    border-left-style: none;
+    border-right-style: none;
+    padding: 1rem 0;
+
+}
+img{
+    width: 130px;
+    height: 145px;
+    object-fit: contain;
+    border:1px solid lightgray;
+    padding:5px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+
+ul li{width:100%;}
+
+/*  BOUTON READ MORE   ---DEBUT  */
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+  }
+  /*  BOUTON READ MORE  -- FIN  */
