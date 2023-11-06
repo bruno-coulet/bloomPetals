@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Bloom Petals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="Que cherchez-vous ?">
+    </header>
+
+    <main>
+        <h2>Formulaire de Contact</h2>
+        <form action="traitement_formulaire.php" method="post">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+                <option value="M.">Monsieur</option>
+                <option value="Mme">Madame</option>
+                <option value="Autre">Autre</option>
+            </select><br><br>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <label for="adresse">Adresse postale :</label>
+            <textarea id="adresse" name="adresse" rows="4" required></textarea><br><br>
+
+            <input type="checkbox" id="confidentialite" name="confidentialite" required>
+            <label for="confidentialite">J'accepte les politiques de confidentialité de l'entreprise</label><br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+
+    <footer>
+        <p>2023 BloomPetals. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
