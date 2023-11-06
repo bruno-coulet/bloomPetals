@@ -253,14 +253,18 @@ li h3{margin:0;}
 
 /*        ENTREPRISE      */
 
-      
+.background{
+
+
+}     
 .staff {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url(images/feuillage.jpg);
-  background-repeat: no-repeat center/80% opacity/0.5;
-  background-op
+  opacity:1;
+  background-image: url(images/feuillage.png);
+  background-repeat: no-repeat center/80%;
 }
+
 .item-staff{
   display: flex;
   flex-direction: column;
